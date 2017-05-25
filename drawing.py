@@ -18,7 +18,10 @@ for index in range(0, len(list_element)-1, 2):
 						[int(list_element[index][0]), int(list_element[index][1])]
 					),
 				tuple(
-						[int(list_element[index][2]), int(list_element[index][3])]
+						[
+							int(list_element[index][2]) + int(list_element[index][0]), 
+							int(list_element[index][3]) + int(list_element[index][1])
+						]
 					)
 			],
 			'black': [
@@ -26,7 +29,10 @@ for index in range(0, len(list_element)-1, 2):
 						[int(list_element[index+1][0]), int(list_element[index+1][1])]
 					),
 				tuple(
-						[int(list_element[index+1][2]), int(list_element[index+1][3])]
+						[
+							int(list_element[index+1][2]) + int(list_element[index+1][0]), 
+							int(list_element[index+1][3]) + int(list_element[index+1][1])
+						]
 					)
 			]
 		}
